@@ -1,0 +1,276 @@
+-0.169075164
+-0.169081005
+
+ Performance counter stats for './body.exe 16384':
+
+              4,27 msec task-clock:u              #    0,951 CPUs utilized          
+        14.951.301      cycles:u                  #    3,505 GHz                    
+             4.712      L1-dcache-load-misses:u   #    0,03% of all L1-dcache hits  
+        14.390.952      L1-dcache-loads:u         # 3373,170 M/sec                  
+        24.177.579      instructions:u            #    1,62  insn per cycle         
+         1.472.751      branch:u                  #  345,206 M/sec                  
+             4.291      branch-misses:u                                             
+        14.390.952      L1-dcache-loads:u         # 3373,170 M/sec                  
+             4.712      L1-dcache-load-misses:u   #    0,03% of all L1-dcache hits  
+             1.008      LLC-loads:u               #    0,236 M/sec                  
+               391      LLC-load-misses:u         #   38,79% of all LL-cache hits   
+
+       0,004486355 seconds time elapsed
+
+       0,004483000 seconds user
+       0,000000000 seconds sys
+
+
+-0.169075164
+-0.169041288
+
+ Performance counter stats for './body.exe 32768':
+
+              8,11 msec task-clock:u              #    0,976 CPUs utilized          
+        29.537.067      cycles:u                  #    3,644 GHz                    
+             4.769      L1-dcache-load-misses:u   #    0,02% of all L1-dcache hits  
+        28.726.945      L1-dcache-loads:u         # 3543,759 M/sec                  
+        48.130.969      instructions:u            #    1,63  insn per cycle         
+         2.898.152      branch:u                  #  357,516 M/sec                  
+             4.261      branch-misses:u                                             
+        28.726.945      L1-dcache-loads:u         # 3543,759 M/sec                  
+             4.769      L1-dcache-load-misses:u   #    0,02% of all L1-dcache hits  
+               949      LLC-loads:u               #    0,117 M/sec                  
+               395      LLC-load-misses:u         #   41,62% of all LL-cache hits   
+
+       0,008306648 seconds time elapsed
+
+       0,008321000 seconds user
+       0,000000000 seconds sys
+
+
+-0.169075164
+-0.169062754
+
+ Performance counter stats for './body.exe 65536':
+
+             15,79 msec task-clock:u              #    0,985 CPUs utilized          
+        58.687.732      cycles:u                  #    3,718 GHz                    
+             4.749      L1-dcache-load-misses:u   #    0,01% of all L1-dcache hits  
+        57.398.946      L1-dcache-loads:u         # 3636,087 M/sec                  
+        96.037.787      instructions:u            #    1,64  insn per cycle         
+         5.748.970      branch:u                  #  364,184 M/sec                  
+             4.327      branch-misses:u                                             
+        57.398.946      L1-dcache-loads:u         # 3636,087 M/sec                  
+             4.749      L1-dcache-load-misses:u   #    0,01% of all L1-dcache hits  
+               924      LLC-loads:u               #    0,059 M/sec                  
+               375      LLC-load-misses:u         #   40,58% of all LL-cache hits   
+
+       0,016032602 seconds time elapsed
+
+       0,015995000 seconds user
+       0,000000000 seconds sys
+
+
+-0.169075164
+-0.169049889
+
+ Performance counter stats for './body.exe 131072':
+
+             31,26 msec task-clock:u              #    0,993 CPUs utilized          
+       116.826.002      cycles:u                  #    3,737 GHz                    
+             4.810      L1-dcache-load-misses:u   #    0,00% of all L1-dcache hits  
+       114.742.987      L1-dcache-loads:u         # 3670,623 M/sec                  
+       191.851.490      instructions:u            #    1,64  insn per cycle         
+        11.450.649      branch:u                  #  366,306 M/sec                  
+             4.378      branch-misses:u                                             
+       114.742.987      L1-dcache-loads:u         # 3670,623 M/sec                  
+             4.810      L1-dcache-load-misses:u   #    0,00% of all L1-dcache hits  
+             1.013      LLC-loads:u               #    0,032 M/sec                  
+               404      LLC-load-misses:u         #   39,88% of all LL-cache hits   
+
+       0,031466376 seconds time elapsed
+
+       0,031352000 seconds user
+       0,000000000 seconds sys
+
+
+-0.169075164
+-0.169030554
+
+ Performance counter stats for './body.exe 262144':
+
+             60,81 msec task-clock:u              #    0,997 CPUs utilized          
+       233.726.234      cycles:u                  #    3,844 GHz                    
+             4.740      L1-dcache-load-misses:u   #    0,00% of all L1-dcache hits  
+       229.430.961      L1-dcache-loads:u         # 3773,171 M/sec                  
+       383.478.724      instructions:u            #    1,64  insn per cycle         
+        22.853.887      branch:u                  #  375,850 M/sec                  
+             4.392      branch-misses:u                                             
+       229.430.961      L1-dcache-loads:u         # 3773,171 M/sec                  
+             4.740      L1-dcache-load-misses:u   #    0,00% of all L1-dcache hits  
+               990      LLC-loads:u               #    0,016 M/sec                  
+               441      LLC-load-misses:u         #   44,55% of all LL-cache hits   
+
+       0,061008628 seconds time elapsed
+
+       0,060980000 seconds user
+       0,000000000 seconds sys
+
+
+-0.169075164
+-0.169006160
+
+ Performance counter stats for './body.exe 524288':
+
+            123,81 msec task-clock:u              #    0,995 CPUs utilized          
+       468.562.732      cycles:u                  #    3,785 GHz                    
+             5.115      L1-dcache-load-misses:u   #    0,00% of all L1-dcache hits  
+       458.806.987      L1-dcache-loads:u         # 3705,846 M/sec                  
+       766.733.302      instructions:u            #    1,64  insn per cycle         
+        45.660.456      branch:u                  #  368,806 M/sec                  
+             4.497      branch-misses:u                                             
+       458.806.987      L1-dcache-loads:u         # 3705,846 M/sec                  
+             5.115      L1-dcache-load-misses:u   #    0,00% of all L1-dcache hits  
+             1.095      LLC-loads:u               #    0,009 M/sec                  
+               543      LLC-load-misses:u         #   49,59% of all LL-cache hits   
+
+       0,124473951 seconds time elapsed
+
+       0,120794000 seconds user
+       0,003228000 seconds sys
+
+
+-0.169075164
+-0.169039630
+
+ Performance counter stats for './body.exe 1048576':
+
+            244,83 msec task-clock:u              #    0,999 CPUs utilized          
+       934.082.388      cycles:u                  #    3,815 GHz                    
+             5.102      L1-dcache-load-misses:u   #    0,00% of all L1-dcache hits  
+       917.559.266      L1-dcache-loads:u         # 3747,741 M/sec                  
+     1.533.242.622      instructions:u            #    1,64  insn per cycle         
+        91.273.779      branch:u                  #  372,805 M/sec                  
+             5.050      branch-misses:u                                             
+       917.559.266      L1-dcache-loads:u         # 3747,741 M/sec                  
+             5.102      L1-dcache-load-misses:u   #    0,00% of all L1-dcache hits  
+               975      LLC-loads:u               #    0,004 M/sec                  
+               495      LLC-load-misses:u         #   50,77% of all LL-cache hits   
+
+       0,245039210 seconds time elapsed
+
+       0,244026000 seconds user
+       0,000000000 seconds sys
+
+
+-0.169075164
+-0.169057900
+
+ Performance counter stats for './body.exe 2097152':
+
+            495,29 msec task-clock:u              #    1,000 CPUs utilized          
+     1.867.392.563      cycles:u                  #    3,770 GHz                    
+             5.458      L1-dcache-load-misses:u   #    0,00% of all L1-dcache hits  
+     1.835.063.589      L1-dcache-loads:u         # 3705,062 M/sec                  
+     3.066.261.087      instructions:u            #    1,64  insn per cycle         
+       182.500.222      branch:u                  #  368,475 M/sec                  
+             5.402      branch-misses:u                                             
+     1.835.063.589      L1-dcache-loads:u         # 3705,062 M/sec                  
+             5.458      L1-dcache-load-misses:u   #    0,00% of all L1-dcache hits  
+             1.108      LLC-loads:u               #    0,002 M/sec                  
+               579      LLC-load-misses:u         #   52,26% of all LL-cache hits   
+
+       0,495492122 seconds time elapsed
+
+       0,490093000 seconds user
+       0,003291000 seconds sys
+
+
+-0.169075164
+-0.169028581
+
+ Performance counter stats for './body.exe 4194304':
+
+            986,73 msec task-clock:u              #    1,000 CPUs utilized          
+     3.735.852.444      cycles:u                  #    3,786 GHz                    
+             7.509      L1-dcache-load-misses:u   #    0,00% of all L1-dcache hits  
+     3.670.071.245      L1-dcache-loads:u         # 3719,419 M/sec                  
+     6.132.296.948      instructions:u            #    1,64  insn per cycle         
+       364.952.094      branch:u                  #  369,859 M/sec                  
+             5.186      branch-misses:u                                             
+     3.670.071.245      L1-dcache-loads:u         # 3719,419 M/sec                  
+             7.509      L1-dcache-load-misses:u   #    0,00% of all L1-dcache hits  
+             2.469      LLC-loads:u               #    0,003 M/sec                  
+             1.984      LLC-load-misses:u         #   80,36% of all LL-cache hits   
+
+       0,986954187 seconds time elapsed
+
+       0,986148000 seconds user
+       0,000000000 seconds sys
+
+
+-0.169075164
+-0.169028480
+
+ Performance counter stats for './body.exe 8388608':
+
+          1.962,79 msec task-clock:u              #    1,000 CPUs utilized          
+     7.472.151.339      cycles:u                  #    3,807 GHz                    
+            10.024      L1-dcache-load-misses:u   #    0,00% of all L1-dcache hits  
+     7.340.087.636      L1-dcache-loads:u         # 3739,623 M/sec                  
+    12.264.369.807      instructions:u            #    1,64  insn per cycle         
+       729.856.948      branch:u                  #  371,847 M/sec                  
+             7.601      branch-misses:u                                             
+     7.340.087.636      L1-dcache-loads:u         # 3739,623 M/sec                  
+            10.024      L1-dcache-load-misses:u   #    0,00% of all L1-dcache hits  
+             3.830      LLC-loads:u               #    0,002 M/sec                  
+             3.295      LLC-load-misses:u         #   86,03% of all LL-cache hits   
+
+       1,963737190 seconds time elapsed
+
+       1,961529000 seconds user
+       0,000000000 seconds sys
+
+
+-0.169075164
+-0.169062234
+
+ Performance counter stats for './body.exe 16777216':
+
+          3.880,65 msec task-clock:u              #    1,000 CPUs utilized          
+    14.937.912.172      cycles:u                  #    3,849 GHz                    
+            10.862      L1-dcache-load-misses:u   #    0,00% of all L1-dcache hits  
+    14.680.120.076      L1-dcache-loads:u         # 3782,901 M/sec                  
+    24.528.515.211      instructions:u            #    1,64  insn per cycle         
+     1.459.666.355      branch:u                  #  376,140 M/sec                  
+             8.656      branch-misses:u                                             
+    14.680.120.076      L1-dcache-loads:u         # 3782,901 M/sec                  
+            10.862      L1-dcache-load-misses:u   #    0,00% of all L1-dcache hits  
+             4.002      LLC-loads:u               #    0,001 M/sec                  
+             3.486      LLC-load-misses:u         #   87,11% of all LL-cache hits   
+
+       3,881398760 seconds time elapsed
+
+       3,878637000 seconds user
+       0,000000000 seconds sys
+
+
+-0.169075164
+-0.169051305
+
+ Performance counter stats for './body.exe 33554432':
+
+          7.765,52 msec task-clock:u              #    0,995 CPUs utilized          
+    29.875.065.689      cycles:u                  #    3,847 GHz                    
+            19.328      L1-dcache-load-misses:u   #    0,00% of all L1-dcache hits  
+    29.360.185.323      L1-dcache-loads:u         # 3780,839 M/sec                  
+    49.056.806.516      instructions:u            #    1,64  insn per cycle         
+     2.919.285.642      branch:u                  #  375,929 M/sec                  
+            14.758      branch-misses:u                                             
+    29.360.185.323      L1-dcache-loads:u         # 3780,839 M/sec                  
+            19.328      L1-dcache-load-misses:u   #    0,00% of all L1-dcache hits  
+             7.786      LLC-loads:u               #    0,001 M/sec                  
+             5.235      LLC-load-misses:u         #   67,24% of all LL-cache hits   
+
+       7,804568296 seconds time elapsed
+
+       7,750835000 seconds user
+       0,013229000 seconds sys
+
+

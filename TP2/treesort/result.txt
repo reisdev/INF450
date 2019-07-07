@@ -1,0 +1,252 @@
+
+ Performance counter stats for './treesort.exe 16384':
+
+            341,21 msec task-clock:u              #    0,999 CPUs utilized          
+     1.245.678.004      cycles:u                  #    3,651 GHz                    
+        21.068.021      L1-dcache-load-misses:u   #    4,65% of all L1-dcache hits  
+       452.666.441      L1-dcache-loads:u         # 1326,635 M/sec                  
+     1.233.429.410      instructions:u            #    0,99  insn per cycle         
+       226.117.223      branch:u                  #  662,684 M/sec                  
+        15.332.737      branch-misses:u                                             
+       452.666.441      L1-dcache-loads:u         # 1326,635 M/sec                  
+        21.068.021      L1-dcache-load-misses:u   #    4,65% of all L1-dcache hits  
+         3.381.511      LLC-loads:u               #    9,910 M/sec                  
+             2.199      LLC-load-misses:u         #    0,07% of all LL-cache hits   
+
+       0,341463178 seconds time elapsed
+
+       0,324733000 seconds user
+       0,016544000 seconds sys
+
+
+
+ Performance counter stats for './treesort.exe 32768':
+
+            799,32 msec task-clock:u              #    0,999 CPUs utilized          
+     2.914.390.405      cycles:u                  #    3,646 GHz                    
+        49.811.095      L1-dcache-load-misses:u   #    5,21% of all L1-dcache hits  
+       956.857.868      L1-dcache-loads:u         # 1197,086 M/sec                  
+     2.576.556.753      instructions:u            #    0,88  insn per cycle         
+       474.625.941      branch:u                  #  593,785 M/sec                  
+        34.975.991      branch-misses:u                                             
+       956.857.868      L1-dcache-loads:u         # 1197,086 M/sec                  
+        49.811.095      L1-dcache-load-misses:u   #    5,21% of all L1-dcache hits  
+        13.133.180      LLC-loads:u               #   16,430 M/sec                  
+            34.656      LLC-load-misses:u         #    0,26% of all LL-cache hits   
+
+       0,799999514 seconds time elapsed
+
+       0,755893000 seconds user
+       0,043295000 seconds sys
+
+
+
+ Performance counter stats for './treesort.exe 65536':
+
+          1.820,38 msec task-clock:u              #    1,000 CPUs utilized          
+     6.685.570.353      cycles:u                  #    3,673 GHz                    
+        98.717.082      L1-dcache-load-misses:u   #    4,89% of all L1-dcache hits  
+     2.019.007.063      L1-dcache-loads:u         # 1109,113 M/sec                  
+     5.377.043.811      instructions:u            #    0,80  insn per cycle         
+       994.903.204      branch:u                  #  546,536 M/sec                  
+        79.543.873      branch-misses:u                                             
+     2.019.007.063      L1-dcache-loads:u         # 1109,113 M/sec                  
+        98.717.082      L1-dcache-load-misses:u   #    4,89% of all L1-dcache hits  
+        30.801.344      LLC-loads:u               #   16,920 M/sec                  
+           351.640      LLC-load-misses:u         #    1,14% of all LL-cache hits   
+
+       1,820647478 seconds time elapsed
+
+       1,755906000 seconds user
+       0,063316000 seconds sys
+
+
+
+ Performance counter stats for './treesort.exe 131072':
+
+          3.258,58 msec task-clock:u              #    1,000 CPUs utilized          
+    12.286.430.733      cycles:u                  #    3,770 GHz                    
+       186.212.113      L1-dcache-load-misses:u   #    5,05% of all L1-dcache hits  
+     3.683.961.037      L1-dcache-loads:u         # 1130,543 M/sec                  
+     9.036.532.708      instructions:u            #    0,74  insn per cycle         
+     1.691.461.888      branch:u                  #  519,080 M/sec                  
+       149.392.330      branch-misses:u                                             
+     3.683.961.037      L1-dcache-loads:u         # 1130,543 M/sec                  
+       186.212.113      L1-dcache-load-misses:u   #    5,05% of all L1-dcache hits  
+        54.313.489      LLC-loads:u               #   16,668 M/sec                  
+           313.703      LLC-load-misses:u         #    0,58% of all LL-cache hits   
+
+       3,258770593 seconds time elapsed
+
+       3,178130000 seconds user
+       0,076540000 seconds sys
+
+
+
+ Performance counter stats for './treesort.exe 262144':
+
+          6.280,32 msec task-clock:u              #    1,000 CPUs utilized          
+    23.803.962.273      cycles:u                  #    3,790 GHz                    
+       364.310.780      L1-dcache-load-misses:u   #    5,19% of all L1-dcache hits  
+     7.013.868.555      L1-dcache-loads:u         # 1116,801 M/sec                  
+    16.355.509.456      instructions:u            #    0,69  insn per cycle         
+     3.084.578.236      branch:u                  #  491,150 M/sec                  
+       289.270.243      branch-misses:u                                             
+     7.013.868.555      L1-dcache-loads:u         # 1116,801 M/sec                  
+       364.310.780      L1-dcache-load-misses:u   #    5,19% of all L1-dcache hits  
+       100.994.975      LLC-loads:u               #   16,081 M/sec                  
+         1.117.907      LLC-load-misses:u         #    1,11% of all LL-cache hits   
+
+       6,280485691 seconds time elapsed
+
+       6,173234000 seconds user
+       0,103160000 seconds sys
+
+
+
+ Performance counter stats for './treesort.exe 524288':
+
+         12.309,27 msec task-clock:u              #    1,000 CPUs utilized          
+    46.792.776.914      cycles:u                  #    3,801 GHz                    
+       711.488.197      L1-dcache-load-misses:u   #    5,20% of all L1-dcache hits  
+    13.673.683.935      L1-dcache-loads:u         # 1110,844 M/sec                  
+    30.993.463.664      instructions:u            #    0,66  insn per cycle         
+     5.870.811.644      branch:u                  #  476,942 M/sec                  
+       568.520.010      branch-misses:u                                             
+    13.673.683.935      L1-dcache-loads:u         # 1110,844 M/sec                  
+       711.488.197      L1-dcache-load-misses:u   #    5,20% of all L1-dcache hits  
+       200.968.149      LLC-loads:u               #   16,327 M/sec                  
+         1.862.208      LLC-load-misses:u         #    0,93% of all LL-cache hits   
+
+      12,309421350 seconds time elapsed
+
+      12,188917000 seconds user
+       0,113294000 seconds sys
+
+
+
+ Performance counter stats for './treesort.exe 1048576':
+
+         24.326,54 msec task-clock:u              #    1,000 CPUs utilized          
+    92.591.100.877      cycles:u                  #    3,806 GHz                    
+     1.413.832.411      L1-dcache-load-misses:u   #    5,24% of all L1-dcache hits  
+    26.993.314.732      L1-dcache-loads:u         # 1109,624 M/sec                  
+    60.269.372.066      instructions:u            #    0,65  insn per cycle         
+    11.443.278.433      branch:u                  #  470,403 M/sec                  
+     1.128.503.222      branch-misses:u                                             
+    26.993.314.732      L1-dcache-loads:u         # 1109,624 M/sec                  
+     1.413.832.411      L1-dcache-load-misses:u   #    5,24% of all L1-dcache hits  
+       393.023.672      LLC-loads:u               #   16,156 M/sec                  
+         3.788.062      LLC-load-misses:u         #    0,96% of all LL-cache hits   
+
+      24,326371657 seconds time elapsed
+
+      24,152412000 seconds user
+       0,159901000 seconds sys
+
+
+
+ Performance counter stats for './treesort.exe 2097152':
+
+         48.342,77 msec task-clock:u              #    0,999 CPUs utilized          
+   183.162.923.301      cycles:u                  #    3,789 GHz                    
+     2.800.461.399      L1-dcache-load-misses:u   #    5,22% of all L1-dcache hits  
+    53.632.596.699      L1-dcache-loads:u         # 1109,423 M/sec                  
+   118.821.214.329      instructions:u            #    0,65  insn per cycle         
+    22.588.237.496      branch:u                  #  467,252 M/sec                  
+     2.245.114.333      branch-misses:u                                             
+    53.632.596.699      L1-dcache-loads:u         # 1109,423 M/sec                  
+     2.800.461.399      L1-dcache-load-misses:u   #    5,22% of all L1-dcache hits  
+       768.699.155      LLC-loads:u               #   15,901 M/sec                  
+        11.255.938      LLC-load-misses:u         #    1,46% of all LL-cache hits   
+
+      48,408523173 seconds time elapsed
+
+      47,925409000 seconds user
+       0,289057000 seconds sys
+
+
+
+ Performance counter stats for './treesort.exe 4194304':
+
+         94.350,24 msec task-clock:u              #    1,000 CPUs utilized          
+   364.268.237.660      cycles:u                  #    3,861 GHz                    
+     5.648.542.457      L1-dcache-load-misses:u   #    5,28% of all L1-dcache hits  
+   106.911.098.162      L1-dcache-loads:u         # 1133,130 M/sec                  
+   235.924.821.805      instructions:u            #    0,65  insn per cycle         
+    44.878.078.572      branch:u                  #  475,654 M/sec                  
+     4.488.477.135      branch-misses:u                                             
+   106.911.098.162      L1-dcache-loads:u         # 1133,130 M/sec                  
+     5.648.542.457      L1-dcache-load-misses:u   #    5,28% of all L1-dcache hits  
+     1.517.099.459      LLC-loads:u               #   16,079 M/sec                  
+         5.423.233      LLC-load-misses:u         #    0,36% of all LL-cache hits   
+
+      94,348710501 seconds time elapsed
+
+      93,816201000 seconds user
+       0,486358000 seconds sys
+
+
+
+ Performance counter stats for './treesort.exe 8388608':
+
+        188.058,85 msec task-clock:u              #    1,000 CPUs utilized          
+   723.138.886.181      cycles:u                  #    3,845 GHz                    
+    11.155.304.837      L1-dcache-load-misses:u   #    5,23% of all L1-dcache hits  
+   213.468.132.905      L1-dcache-loads:u         # 1135,113 M/sec                  
+   470.132.089.997      instructions:u            #    0,65  insn per cycle         
+    89.457.813.964      branch:u                  #  475,691 M/sec                  
+     8.960.150.389      branch-misses:u                                             
+   213.468.132.905      L1-dcache-loads:u         # 1135,113 M/sec                  
+    11.155.304.837      L1-dcache-load-misses:u   #    5,23% of all L1-dcache hits  
+     2.881.576.910      LLC-loads:u               #   15,323 M/sec                  
+        18.039.268      LLC-load-misses:u         #    0,63% of all LL-cache hits   
+
+     188,059575687 seconds time elapsed
+
+     187,118605000 seconds user
+       0,829363000 seconds sys
+
+
+
+ Performance counter stats for './treesort.exe 16777216':
+
+        373.993,48 msec task-clock:u              #    0,997 CPUs utilized          
+ 1.440.261.835.498      cycles:u                  #    3,851 GHz                    
+    22.459.900.540      L1-dcache-load-misses:u   #    5,27% of all L1-dcache hits  
+   426.582.238.672      L1-dcache-loads:u         # 1140,614 M/sec                  
+   938.546.638.101      instructions:u            #    0,65  insn per cycle         
+   178.617.296.455      branch:u                  #  477,595 M/sec                  
+    17.879.730.878      branch-misses:u                                             
+   426.582.238.672      L1-dcache-loads:u         # 1140,614 M/sec                  
+    22.459.900.540      L1-dcache-load-misses:u   #    5,27% of all L1-dcache hits  
+     5.836.154.964      LLC-loads:u               #   15,605 M/sec                  
+        26.759.071      LLC-load-misses:u         #    0,46% of all LL-cache hits   
+
+     375,064137978 seconds time elapsed
+
+     371,909103000 seconds user
+       1,981717000 seconds sys
+
+
+
+ Performance counter stats for './treesort.exe 33554432':
+
+        751.437,15 msec task-clock:u              #    1,000 CPUs utilized          
+ 2.896.826.403.996      cycles:u                  #    3,855 GHz                    
+    45.120.348.586      L1-dcache-load-misses:u   #    5,29% of all L1-dcache hits  
+   852.810.399.444      L1-dcache-loads:u         # 1134,906 M/sec                  
+ 1.875.375.699.963      instructions:u            #    0,65  insn per cycle         
+   356.936.227.118      branch:u                  #  475,005 M/sec                  
+    35.782.525.072      branch-misses:u                                             
+   852.810.399.444      L1-dcache-loads:u         # 1134,906 M/sec                  
+    45.120.348.586      L1-dcache-load-misses:u   #    5,29% of all L1-dcache hits  
+    11.540.341.083      LLC-loads:u               #   15,358 M/sec                  
+        78.423.469      LLC-load-misses:u         #    0,68% of all LL-cache hits   
+
+     751,783455997 seconds time elapsed
+
+     748,120334000 seconds user
+       3,087059000 seconds sys
+
+

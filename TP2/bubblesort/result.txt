@@ -1,0 +1,211 @@
+
+ Performance counter stats for './bubblesort.exe 128':
+
+             15,45 msec task-clock:u              #    0,954 CPUs utilized          
+        11.458.943      cycles:u                  #    0,742 GHz                    
+             4.434      L1-dcache-load-misses:u   #    0,04% of all L1-dcache hits  
+        12.126.031      L1-dcache-loads:u         #  784,807 M/sec                  
+        27.905.801      instructions:u            #    2,44  insn per cycle         
+         1.774.998      branch:u                  #  114,879 M/sec                  
+            45.847      branch-misses:u                                             
+        12.126.031      L1-dcache-loads:u         #  784,807 M/sec                  
+             4.434      L1-dcache-load-misses:u   #    0,04% of all L1-dcache hits  
+               863      LLC-loads:u               #    0,056 M/sec                  
+               391      LLC-load-misses:u         #   45,31% of all LL-cache hits   
+
+       0,016191079 seconds time elapsed
+
+       0,016122000 seconds user
+       0,000000000 seconds sys
+
+
+
+ Performance counter stats for './bubblesort.exe 256':
+
+             11,70 msec task-clock:u              #    0,983 CPUs utilized          
+        42.911.555      cycles:u                  #    3,669 GHz                    
+             4.573      L1-dcache-load-misses:u   #    0,01% of all L1-dcache hits  
+        48.356.033      L1-dcache-loads:u         # 4134,307 M/sec                  
+       110.679.498      instructions:u            #    2,58  insn per cycle         
+         6.779.798      branch:u                  #  579,654 M/sec                  
+           277.349      branch-misses:u                                             
+        48.356.033      L1-dcache-loads:u         # 4134,307 M/sec                  
+             4.573      L1-dcache-load-misses:u   #    0,01% of all L1-dcache hits  
+               878      LLC-loads:u               #    0,075 M/sec                  
+               456      LLC-load-misses:u         #   51,94% of all LL-cache hits   
+
+       0,011894417 seconds time elapsed
+
+       0,011904000 seconds user
+       0,000000000 seconds sys
+
+
+
+ Performance counter stats for './bubblesort.exe 512':
+
+             42,98 msec task-clock:u              #    0,994 CPUs utilized          
+       163.428.240      cycles:u                  #    3,802 GHz                    
+             4.560      L1-dcache-load-misses:u   #    0,00% of all L1-dcache hits  
+       192.491.334      L1-dcache-loads:u         # 4478,555 M/sec                  
+       439.459.093      instructions:u            #    2,69  insn per cycle         
+        26.619.799      branch:u                  #  619,343 M/sec                  
+           929.885      branch-misses:u                                             
+       192.491.334      L1-dcache-loads:u         # 4478,555 M/sec                  
+             4.560      L1-dcache-load-misses:u   #    0,00% of all L1-dcache hits  
+               843      LLC-loads:u               #    0,020 M/sec                  
+               348      LLC-load-misses:u         #   41,28% of all LL-cache hits   
+
+       0,043226291 seconds time elapsed
+
+       0,043176000 seconds user
+       0,000000000 seconds sys
+
+
+
+ Performance counter stats for './bubblesort.exe 1024':
+
+            160,13 msec task-clock:u              #    0,997 CPUs utilized          
+       606.826.794      cycles:u                  #    3,790 GHz                    
+             5.530      L1-dcache-load-misses:u   #    0,00% of all L1-dcache hits  
+       762.123.370      L1-dcache-loads:u         # 4759,461 M/sec                  
+     1.736.355.154      instructions:u            #    2,86  insn per cycle         
+       105.621.450      branch:u                  #  659,606 M/sec                  
+         2.521.035      branch-misses:u                                             
+       762.123.370      L1-dcache-loads:u         # 4759,461 M/sec                  
+             5.530      L1-dcache-load-misses:u   #    0,00% of all L1-dcache hits  
+             1.302      LLC-loads:u               #    0,008 M/sec                  
+               798      LLC-load-misses:u         #   61,29% of all LL-cache hits   
+
+       0,160573826 seconds time elapsed
+
+       0,157165000 seconds user
+       0,003236000 seconds sys
+
+
+
+ Performance counter stats for './bubblesort.exe 2048':
+
+            631,77 msec task-clock:u              #    0,961 CPUs utilized          
+     2.379.033.617      cycles:u                  #    3,766 GHz                    
+            36.953      L1-dcache-load-misses:u   #    0,00% of all L1-dcache hits  
+     3.048.250.164      L1-dcache-loads:u         # 4824,942 M/sec                  
+     6.942.010.633      instructions:u            #    2,92  insn per cycle         
+       420.911.429      branch:u                  #  666,242 M/sec                  
+         8.750.950      branch-misses:u                                             
+     3.048.250.164      L1-dcache-loads:u         # 4824,942 M/sec                  
+            36.953      L1-dcache-load-misses:u   #    0,00% of all L1-dcache hits  
+             5.968      LLC-loads:u               #    0,009 M/sec                  
+             4.278      LLC-load-misses:u         #   71,68% of all LL-cache hits   
+
+       0,657614166 seconds time elapsed
+
+       0,615276000 seconds user
+       0,017685000 seconds sys
+
+
+
+ Performance counter stats for './bubblesort.exe 4096':
+
+          2.752,59 msec task-clock:u              #    1,000 CPUs utilized          
+    10.538.432.864      cycles:u                  #    3,829 GHz                    
+            87.584      L1-dcache-load-misses:u   #    0,00% of all L1-dcache hits  
+    12.205.270.164      L1-dcache-loads:u         # 4434,100 M/sec                  
+    27.793.942.146      instructions:u            #    2,64  insn per cycle         
+     1.680.636.639      branch:u                  #  610,565 M/sec                  
+        61.022.364      branch-misses:u                                             
+    12.205.270.164      L1-dcache-loads:u         # 4434,100 M/sec                  
+            87.584      L1-dcache-load-misses:u   #    0,00% of all L1-dcache hits  
+            47.222      LLC-loads:u               #    0,017 M/sec                  
+            46.412      LLC-load-misses:u         #   98,28% of all LL-cache hits   
+
+       2,752768698 seconds time elapsed
+
+       2,748038000 seconds user
+       0,003298000 seconds sys
+
+
+
+ Performance counter stats for './bubblesort.exe 8192':
+
+         13.175,68 msec task-clock:u              #    1,000 CPUs utilized          
+    51.314.951.508      cycles:u                  #    3,895 GHz                    
+         2.246.157      L1-dcache-load-misses:u   #    0,00% of all L1-dcache hits  
+    48.889.060.292      L1-dcache-loads:u         # 3710,554 M/sec                  
+   111.338.391.170      instructions:u            #    2,17  insn per cycle         
+     6.716.671.764      branch:u                  #  509,778 M/sec                  
+       503.123.908      branch-misses:u                                             
+    48.889.060.292      L1-dcache-loads:u         # 3710,554 M/sec                  
+         2.246.157      L1-dcache-load-misses:u   #    0,00% of all L1-dcache hits  
+           106.869      LLC-loads:u               #    0,008 M/sec                  
+           105.373      LLC-load-misses:u         #   98,60% of all LL-cache hits   
+
+      13,175531762 seconds time elapsed
+
+      13,170656000 seconds user
+       0,000000000 seconds sys
+
+
+
+ Performance counter stats for './bubblesort.exe 16384':
+
+         60.361,82 msec task-clock:u              #    1,000 CPUs utilized          
+   232.315.229.848      cycles:u                  #    3,849 GHz                    
+       582.301.475      L1-dcache-load-misses:u   #    0,30% of all L1-dcache hits  
+   194.833.335.617      L1-dcache-loads:u         # 3227,758 M/sec                  
+   443.492.856.228      instructions:u            #    1,91  insn per cycle         
+    26.855.079.606      branch:u                  #  444,902 M/sec                  
+     2.747.506.169      branch-misses:u                                             
+   194.833.335.617      L1-dcache-loads:u         # 3227,758 M/sec                  
+       582.301.475      L1-dcache-load-misses:u   #    0,30% of all L1-dcache hits  
+           557.988      LLC-loads:u               #    0,009 M/sec                  
+           406.944      LLC-load-misses:u         #   72,93% of all LL-cache hits   
+
+      60,360220132 seconds time elapsed
+
+      60,330443000 seconds user
+       0,003302000 seconds sys
+
+
+
+ Performance counter stats for './bubblesort.exe 32768':
+
+        251.858,09 msec task-clock:u              #    1,000 CPUs utilized          
+   996.077.753.859      cycles:u                  #    3,955 GHz                    
+     3.102.655.655      L1-dcache-load-misses:u   #    0,40% of all L1-dcache hits  
+   779.773.815.771      L1-dcache-loads:u         # 3096,084 M/sec                  
+ 1.775.051.727.288      instructions:u            #    1,78  insn per cycle         
+   107.397.245.066      branch:u                  #  426,420 M/sec                  
+    12.840.437.403      branch-misses:u                                             
+   779.773.815.771      L1-dcache-loads:u         # 3096,084 M/sec                  
+     3.102.655.655      L1-dcache-load-misses:u   #    0,40% of all L1-dcache hits  
+           516.532      LLC-loads:u               #    0,002 M/sec                  
+           146.365      LLC-load-misses:u         #   28,34% of all LL-cache hits   
+
+     251,921485132 seconds time elapsed
+
+     251,799919000 seconds user
+       0,009943000 seconds sys
+
+
+./bubblesort.exe: Interrupção
+
+ Performance counter stats for './bubblesort.exe 65535':
+
+        538.591,70 msec task-clock:u              #    0,998 CPUs utilized          
+ 2.090.027.833.577      cycles:u                  #    3,881 GHz                    
+     6.580.146.574      L1-dcache-load-misses:u   #    0,42% of all L1-dcache hits  
+ 1.558.953.128.432      L1-dcache-loads:u         # 2894,499 M/sec                  
+ 3.548.980.697.753      instructions:u            #    1,70  insn per cycle         
+   214.550.797.058      branch:u                  #  398,355 M/sec                  
+    28.314.879.141      branch-misses:u                                             
+ 1.558.953.128.432      L1-dcache-loads:u         # 2894,499 M/sec                  
+     6.580.146.574      L1-dcache-load-misses:u   #    0,42% of all L1-dcache hits  
+        87.278.889      LLC-loads:u               #    0,162 M/sec                  
+         2.056.841      LLC-load-misses:u         #    2,36% of all LL-cache hits   
+
+     539,899387964 seconds time elapsed
+
+     537,809478000 seconds user
+       0,654471000 seconds sys
+
+

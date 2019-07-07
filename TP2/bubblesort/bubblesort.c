@@ -107,7 +107,7 @@ int	puzzl[size+1], p[typemax+1][size+1], n, kount;
 
     /* Bubble, Quick */
 int biggest, littlest, top;
-int* sortlist = 0;
+int * sortlist;
 
     /* FFT */
 struct complex    z[fftsize+1], w[fftsize+1], e[fftsize2+1];
@@ -122,16 +122,16 @@ int Rand () {
     return( (int)seed );     /* typecast back to int WR*/
 }
 
-    /* Sorts an array using treesort */
 
-void tInitarr(int length) {
+    /* Sorts an array using bubblesort */
+
+void bInitarr(int length)	{
 	int i;
-	long temp;  /* converted temp to long for 16 bit WR*/
-    sortlist = (int*) malloc(length * sizeof(int));
+	long temp; /* converted temp to long for 16 bit WR*/
 	Initrand();
 	biggest = 0; littlest = 0;
 	for ( i = 1; i <= length; i++ ) {
-	    temp = Rand(); 
+	    temp = Rand();
 	    /* converted constants to long in next stmt, typecast back to int WR*/
 	    sortlist[i] = (int)(temp - (temp/100000L)*100000L - 50000L);
 	    if ( sortlist[i] > biggest ) biggest = sortlist[i];
@@ -139,50 +139,35 @@ void tInitarr(int length) {
 	}
 }
 
-void CreateNode (struct node **t, int n) {
-		*t = (struct node *)malloc(sizeof(struct node)); 
-		(*t)->left = nil; (*t)->right = nil;
-		(*t)->val = n;
+void Bubble(int run, int length) {
+	int i, j;
+	bInitarr(length);
+	top=length;
+	
+	while ( top>1 ) {
+		
+		i=1;
+		while ( i<top ) {
+			
+			if ( sortlist[i] > sortlist[i+1] ) {
+				j = sortlist[i];
+				sortlist[i] = sortlist[i+1];
+				sortlist[i+1] = j;
+			}
+			i=i+1;
+		}
+		
+		top=top-1;
+	}
+	if ( (sortlist[1] != littlest) || (sortlist[length] != biggest) ) printf ( "Error3 in Bubble.\n");
+	//printf("%d\n", sortlist[run + 1]);
 }
 
-void Insert(int n, struct node *t) {
-	/* insert n into tree */
-	if ( n > t->val ) 
-		if ( t->left == nil ) CreateNode(&t->left,n);
-		else Insert(n,t->left);
-	else if ( n < t->val )
-		if ( t->right == nil ) CreateNode(&t->right,n);
-		else Insert(n,t->right);
-}
-
-int Checktree(struct node *p) {
-    /* check by inorder traversal */
-    int result;
-    result = true;
-	if ( p->left != nil ) 
-	   if ( p->left->val <= p->val ) result=false;
-	   else result = Checktree(p->left) && result;
-	if ( p->right != nil )
-	   if ( p->right->val >= p->val ) result = false;
-	   else result = Checktree(p->right) && result;
-	return( result);
-} /* checktree */
-
-void Trees(int run, int N) {
-    int i;
-    tInitarr(N);
-    tree = (struct node *)malloc(sizeof(struct node)); 
-    tree->left = nil; tree->right=nil; tree->val=sortlist[1];
-    for ( i = 2; i <= N; i++ )
-		Insert(sortlist[i],tree);
-	//printf("%d\n", sortlist[2 + run]);
-    if ( ! Checktree(tree) ) printf ( " Error in Tree.\n");
-}
-
-int main(int argc,char *argv[])
+int main(int argc, char ** argv)
 {
 	int i;
-    int N = atoi(argv[1]);
-	for (i = 0; i < 100; i++) Trees(i,N);
+    int N = atoi(argv[argc-1]);
+    sortlist = malloc(sizeof(int) * N);
+	for (i = 0; i < 100; i++) Bubble(i,N);
 	return 0;
 }

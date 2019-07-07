@@ -30,7 +30,7 @@
 #define d 		     8
 
     /* Bubble, Quick */
-#define sortelements 5000
+#define sortelements 50000
 #define srtelements  500
 
     /* fft */
@@ -106,7 +106,8 @@ int	piececount[classmax+1],	class[typemax+1], piecemax[typemax+1];
 int	puzzl[size+1], p[typemax+1][size+1], n, kount;
 
     /* Bubble, Quick */
-int sortlist[sortelements+1], biggest, littlest, top;
+int biggest, littlest, top;
+int *sortlist = 0;
 
     /* FFT */
 struct complex    z[fftsize+1], w[fftsize+1], e[fftsize2+1];
@@ -123,12 +124,13 @@ int Rand () {
 
 
     /* Sorts an array using quicksort */
-void Initarr() {
+void Initarr(int length) {
+    sortlist = (int*) malloc(length * sizeof(int));
 	int i; /* temp */
 	long temp;  /* made temp a long for 16 bit WR*/
 	Initrand();
 	biggest = 0; littlest = 0;
-	for ( i = 1; i <= sortelements; i++ ) {
+	for ( i = 1; i <= length; i++ ) {
 	    temp = Rand();
 	    /* converted constants to long in next stmt, typecast back to int WR*/
 	    sortlist[i] = (int)(temp - (temp/100000L)*100000L - 50000L);
@@ -158,17 +160,18 @@ void Quicksort( int a[], int l, int r) {
 }
 
 
-void Quick (int run) {
-    Initarr();
-    Quicksort(sortlist,1,sortelements);
-    if ( (sortlist[1] != littlest) || (sortlist[sortelements] != biggest) )	printf ( " Error in Quick.\n");
-	  printf("%d\n", sortlist[run + 1]);
+void Quick (int run,int elements) {
+    Initarr(elements);
+    Quicksort(sortlist,1,elements);
+    if ( (sortlist[1] != littlest) || (sortlist[elements] != biggest) )	printf (" Error in Quick.\n");
+	  //printf("%d\n", sortlist[run + 1]);
 }
 
-int main()
+int main(int argc,char *argv[])
 {
 	int i;
-	for (i = 0; i < 100; i++) Quick(i);
+    int elements = atoi(argv[argc-1]);
+	for (i = 0; i < 100; i++) Quick(i,elements);
 	return 0;
 }
 

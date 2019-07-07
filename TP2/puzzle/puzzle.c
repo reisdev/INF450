@@ -1,7 +1,6 @@
 #include "stdlib.h"
 #include "stdio.h"
 
-#define ARRAY_SIZE 500000
 #define NLOOPS1 5
 #define NLOOPS2 200
 
@@ -66,18 +65,20 @@ int findDuplicate(int *data, int len) {
     return result;
 }
 
-int main() {
+int main(int argc,char *argv[]) {
     int i, j, duplicate;
     int *rndArr;
+
+    int size = atoi(argv[argc-1]);
 
     srand(1);
 
 	for (i = 0; i < NLOOPS1; i++) {
-		rndArr = createRandomArray(ARRAY_SIZE);
+		rndArr = createRandomArray(size);
 		for (j = 0; j < NLOOPS2; j++)
-			duplicate = findDuplicate(rndArr, ARRAY_SIZE+1);
+			duplicate = findDuplicate(rndArr, size+1);
 		free(rndArr);
-		printf("Found duplicate: %d\n", duplicate);
+		//printf("Found duplicate: %d\n", duplicate);
 	}
 
     return 0;
