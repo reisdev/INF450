@@ -10,39 +10,67 @@ struct node {
     node *next;
 };
 
-void swap(node* prev_a, node* prev_b){
-    node * aux;
-    if(prev_a != NULL && prev_b != NULL){
-        if(prev_a->next != NULL) {
-            aux = prev_b->next;
-            prev_b->next = NULL;
-        }
-        else if(prev_b->next == NULL) {
-            
-        }
+void print(node* n){
+    printf("\n\n ------- Print List -------- \n\n");
+    int i = 0;
+    while(n != NULL){
+        printf("Node[%d] = %d   ->   ",i,n->num);
+        n = n->next;
+        i++;
     }
+    return;
+}
+
+void free_list(struct node* head)
+{  
+  node* current = head;
+  node* next;
+  while (current != NULL) {
+    next = current->next;
+    free(current);
+    current = next;
+  }
+  head = NULL;
+}
+
+void swap(node * head,long int i,long int j){
+    if(i == j) return;
+    int index = 0;
+    node *prevA = NULL,*a = head;
+    while(a && index != i){
+        prevA = a;
+        a = a->next;
+        index++;
+    }
+
+    index = 0;
+    node *prevB = NULL,*b = head;
+    while(b && index != j){
+        prevB = b;
+        b = b->next;
+        index++;
+    }
+
+    if( a == NULL && b == NULL) return;
+
+    if(prevA != NULL) prevA->next = b;
+    else head = b;
+
+     if(prevB != NULL) prevB->next = a;
+     else head = a;
+
+     node * aux = b->next;
+     b->next = a->next;
+     a->next = aux;
+     return;
 }
 
 void foreach(node * head,int M, int size){
     int iterations = 0;
     while (iterations < M){
-        node * prev_a = NULL;
-        node * prev_b = NULL;
-
-        int index = 0;
-        int i = rand() % (size + 1);
-        int j = rand() % (size + 1);
-        node * aux = head;
-        while( prev_a == NULL && prev_b == NULL){
-            if(index+1 == i){
-                prev_a = head;
-            }
-            if(index+1 == j){
-                prev_b = head;
-            }
-            index++;
-        }
-    swap(prev_a,prev_b);
+        long int i = rand() % (size + 1);
+        long int j = rand() % (size + 1);
+        swap(head,i,j);
     iterations++;
     }
 }
@@ -65,17 +93,6 @@ node * fillList(int size){
     return head;
 }
 
-void printList(node* n){
-    printf("\n\n ------- Print List -------- \n\n");
-    int i = 0;
-    while(n != NULL){
-        printf("Node[%d] = %d \n",i,n->num);
-        n = n->next;
-        i++;
-    }
-    return;
-}
-
 int main(int argc, char **argv){
     long int size = atol(argv[1]);
     int X = atol(argv[2]);
@@ -83,6 +100,7 @@ int main(int argc, char **argv){
     node* list = fillList(size);
     for(int i = 0;i < X; i++){
         foreach(list,M,size);
-    }
+    }   
+    free_list(list);
 }
 

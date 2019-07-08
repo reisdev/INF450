@@ -217,7 +217,7 @@
    136.650.582.543      L1-dcache-loads:u         # 4454,888 M/sec                  
    275.649.982.026      instructions:u            #    2,37  insn per cycle         
     17.364.559.523      branch:u                  #  566,095 M/sec                  
-             5.617      branch-misses:u                                             
+             5.617      branch-misses:u                                             i
    136.650.582.543      L1-dcache-loads:u         # 4454,888 M/sec                  
      1.187.540.853      L1-dcache-load-misses:u   #    0,87% of all L1-dcache hits  
         98.984.842      LLC-loads:u               #    3,227 M/sec                  
@@ -227,7 +227,6 @@
 
       30,510424000 seconds user
        0,116342000 seconds sys
-
 
 
  Performance counter stats for './puzzle.exe 33554432':
