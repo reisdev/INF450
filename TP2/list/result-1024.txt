@@ -1,0 +1,35 @@
+==3119== Cachegrind, a cache and branch-prediction profiler
+==3119== Copyright (C) 2002-2017, and GNU GPL'd, by Nicholas Nethercote et al.
+==3119== Using Valgrind-3.14.0 and LibVEX; rerun with -h for copyright info
+==3119== Command: ./list.exe 1024 40 30
+==3119== 
+--3119-- warning: L3 cache found, using its data for the LL simulation.
+--3119-- warning: specified LL cache: line_size 64  assoc 12  total_size 9,437,184
+--3119-- warning: simulated LL cache: line_size 64  assoc 18  total_size 9,437,184
+==3119== 
+==3119== Process terminating with default action of signal 11 (SIGSEGV): dumping core
+==3119==  Access not within mapped region at address 0x8
+==3119==    at 0x1092FE: swap (in /home/matheusdrdj/Documentos/git/INF450/TP2/list/list.exe)
+==3119==    by 0x1093AA: foreach (in /home/matheusdrdj/Documentos/git/INF450/TP2/list/list.exe)
+==3119==    by 0x1094D5: main (in /home/matheusdrdj/Documentos/git/INF450/TP2/list/list.exe)
+==3119==  If you believe this happened as a result of a stack
+==3119==  overflow in your program's main thread (unlikely but
+==3119==  possible), you can try to increase the size of the
+==3119==  main thread stack using the --main-stacksize= flag.
+==3119==  The main thread stack size used in this run was 8388608.
+==3119== 
+==3119== I   refs:      2,990,918
+==3119== I1  misses:       36,155
+==3119== LLi misses:       36,144
+==3119== I1  miss rate:      1.21%
+==3119== LLi miss rate:      1.21%
+==3119== 
+==3119== D   refs:      2,019,589  (1,549,665 rd   + 469,924 wr)
+==3119== D1  misses:      126,203  (  120,811 rd   +   5,392 wr)
+==3119== LLd misses:      125,058  (  119,772 rd   +   5,286 wr)
+==3119== D1  miss rate:       6.2% (      7.8%     +     1.1%  )
+==3119== LLd miss rate:       6.2% (      7.7%     +     1.1%  )
+==3119== 
+==3119== LL refs:         162,358  (  156,966 rd   +   5,392 wr)
+==3119== LL misses:       161,202  (  155,916 rd   +   5,286 wr)
+==3119== LL miss rate:        3.2% (      3.4%     +     1.1%  )
