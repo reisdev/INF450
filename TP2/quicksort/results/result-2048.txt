@@ -1,0 +1,21 @@
+
+ Performance counter stats for './quicksort.exe 2048':
+
+             18,97 msec task-clock:u              #    0,988 CPUs utilized          
+        63.495.100      cycles:u                  #    3,348 GHz                    
+             7.050      L1-dcache-load-misses:u   #    0,02% of all L1-dcache hits  
+        32.037.733      L1-dcache-loads:u         # 1689,125 M/sec                  
+        68.421.152      instructions:u            #    1,08  insn per cycle         
+         7.203.975      branch:u                  #  379,815 M/sec                  
+         1.067.250      branch-misses:u                                             
+        32.037.733      L1-dcache-loads:u         # 1689,125 M/sec                  
+             7.050      L1-dcache-load-misses:u   #    0,02% of all L1-dcache hits  
+             1.152      LLC-loads:u               #    0,061 M/sec                  
+               277      LLC-load-misses:u         #   24,05% of all LL-cache hits   
+
+       0,019190947 seconds time elapsed
+
+       0,019166000 seconds user
+       0,000000000 seconds sys
+
+

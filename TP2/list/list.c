@@ -35,7 +35,7 @@ void free_list(struct node* head)
 
 void swap(node * head,long int i,long int j){
     if(i == j) return;
-    int index = 0;
+    long int index = 0;
     node *prevA = NULL,*a = head;
     while(a && index != i){
         prevA = a;

@@ -1,0 +1,24 @@
+==18609== Cachegrind, a cache and branch-prediction profiler
+==18609== Copyright (C) 2002-2017, and GNU GPL'd, by Nicholas Nethercote et al.
+==18609== Using Valgrind-3.14.0 and LibVEX; rerun with -h for copyright info
+==18609== Command: ./bubblesort.exe 2048 40 30
+==18609== 
+--18609-- warning: L3 cache found, using its data for the LL simulation.
+--18609-- warning: specified LL cache: line_size 64  assoc 12  total_size 9,437,184
+--18609-- warning: simulated LL cache: line_size 64  assoc 18  total_size 9,437,184
+==18609== 
+==18609== I   refs:      1,769,872
+==18609== I1  misses:        4,344
+==18609== LLi misses:        4,342
+==18609== I1  miss rate:      0.25%
+==18609== LLi miss rate:      0.25%
+==18609== 
+==18609== D   refs:        808,387  (715,960 rd   + 92,427 wr)
+==18609== D1  misses:       17,724  ( 13,600 rd   +  4,124 wr)
+==18609== LLd misses:       11,463  (  9,756 rd   +  1,707 wr)
+==18609== D1  miss rate:       2.2% (    1.9%     +    4.5%  )
+==18609== LLd miss rate:       1.4% (    1.4%     +    1.8%  )
+==18609== 
+==18609== LL refs:          22,068  ( 17,944 rd   +  4,124 wr)
+==18609== LL misses:        15,805  ( 14,098 rd   +  1,707 wr)
+==18609== LL miss rate:        0.6% (    0.6%     +    1.8%  )

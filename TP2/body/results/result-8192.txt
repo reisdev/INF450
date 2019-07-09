@@ -1,0 +1,21 @@
+
+ Performance counter stats for './body.exe 8192':
+
+              2,21 msec task-clock:u              #    0,923 CPUs utilized          
+         7.561.898      cycles:u                  #    3,428 GHz                    
+             3.213      L1-dcache-load-misses:u   #    0,04% of all L1-dcache hits  
+         7.206.241      L1-dcache-loads:u         # 3267,092 M/sec                  
+        12.132.814      instructions:u            #    1,60  insn per cycle         
+           744.113      branch:u                  #  337,358 M/sec                  
+             2.103      branch-misses:u                                             
+         7.206.241      L1-dcache-loads:u         # 3267,092 M/sec                  
+             3.213      L1-dcache-load-misses:u   #    0,04% of all L1-dcache hits  
+               838      LLC-loads:u               #    0,380 M/sec                  
+               359      LLC-load-misses:u         #   42,84% of all LL-cache hits   
+
+       0,002390077 seconds time elapsed
+
+       0,002413000 seconds user
+       0,000000000 seconds sys
+
+

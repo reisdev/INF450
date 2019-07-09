@@ -1,12 +1,7 @@
 #!/bin/bash
 gcc bubblesort.c -lm -o bubblesort.exe
-perf stat -d -e task-clock,cycles,L1-dcache-load-misses,L1-dcache-loads,instructions,branch,branch-misses ./bubblesort.exe 128 &> result.txt
-perf stat -d -e task-clock,cycles,L1-dcache-load-misses,L1-dcache-loads,instructions,branch,branch-misses ./bubblesort.exe 256 &>> result.txt
-perf stat -d -e task-clock,cycles,L1-dcache-load-misses,L1-dcache-loads,instructions,branch,branch-misses ./bubblesort.exe 512 &>> result.txt
-perf stat -d -e task-clock,cycles,L1-dcache-load-misses,L1-dcache-loads,instructions,branch,branch-misses ./bubblesort.exe 1024 &>> result.txt
-perf stat -d -e task-clock,cycles,L1-dcache-load-misses,L1-dcache-loads,instructions,branch,branch-misses ./bubblesort.exe 2048 &>> result.txt
-perf stat -d -e task-clock,cycles,L1-dcache-load-misses,L1-dcache-loads,instructions,branch,branch-misses ./bubblesort.exe 4096 &>> result.txt
-perf stat -d -e task-clock,cycles,L1-dcache-load-misses,L1-dcache-loads,instructions,branch,branch-misses ./bubblesort.exe 8192 &>> result.txt
-perf stat -d -e task-clock,cycles,L1-dcache-load-misses,L1-dcache-loads,instructions,branch,branch-misses ./bubblesort.exe 16384 &>> result.txt
-perf stat -d -e task-clock,cycles,L1-dcache-load-misses,L1-dcache-loads,instructions,branch,branch-misses ./bubblesort.exe 32768 &>> result.txt
-perf stat -d -e task-clock,cycles,L1-dcache-load-misses,L1-dcache-loads,instructions,branch,branch-misses ./bubblesort.exe 65535 &>> result.txt
+rm -r results
+mkdir results
+for c in 2048 4096 8192 16384 32768 65536 131072 262144 524288 1048576 2097152; do
+    perf stat -d -e task-clock,cycles,L1-dcache-load-misses,L1-dcache-loads,instructions,branch,branch-misses ./bubblesort.exe $C &> ./result/result-$c.txt
+done

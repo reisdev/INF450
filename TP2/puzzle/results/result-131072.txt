@@ -1,0 +1,21 @@
+
+ Performance counter stats for './puzzle.exe 131072':
+
+            223,00 msec task-clock:u              #    0,999 CPUs utilized          
+       864.114.402      cycles:u                  #    3,875 GHz                    
+         8.766.895      L1-dcache-load-misses:u   #    0,82% of all L1-dcache hits  
+     1.067.645.575      L1-dcache-loads:u         # 4787,659 M/sec                  
+     2.153.741.703      instructions:u            #    2,49  insn per cycle         
+       135.706.247      branch:u                  #  608,550 M/sec                  
+             5.270      branch-misses:u                                             
+     1.067.645.575      L1-dcache-loads:u         # 4787,659 M/sec                  
+         8.766.895      L1-dcache-load-misses:u   #    0,82% of all L1-dcache hits  
+           194.294      LLC-loads:u               #    0,871 M/sec                  
+               330      LLC-load-misses:u         #    0,17% of all LL-cache hits   
+
+       0,223210696 seconds time elapsed
+
+       0,223053000 seconds user
+       0,000000000 seconds sys
+
+

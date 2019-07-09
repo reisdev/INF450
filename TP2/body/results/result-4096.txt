@@ -1,0 +1,21 @@
+
+ Performance counter stats for './body.exe 4096':
+
+              1,27 msec task-clock:u              #    0,877 CPUs utilized          
+         4.040.569      cycles:u                  #    3,189 GHz                    
+             3.173      L1-dcache-load-misses:u   #    0,09% of all L1-dcache hits  
+         3.622.239      L1-dcache-loads:u         # 2858,750 M/sec                  
+         6.144.460      instructions:u            #    1,52  insn per cycle         
+           387.759      branch:u                  #  306,028 M/sec                  
+             2.128      branch-misses:u                                             
+         3.622.239      L1-dcache-loads:u         # 2858,750 M/sec                  
+             3.173      L1-dcache-load-misses:u   #    0,09% of all L1-dcache hits  
+               761      LLC-loads:u               #    0,601 M/sec                  
+               245      LLC-load-misses:u         #   32,19% of all LL-cache hits   
+
+       0,001445551 seconds time elapsed
+
+       0,001439000 seconds user
+       0,000000000 seconds sys
+
+

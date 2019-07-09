@@ -1,0 +1,21 @@
+
+ Performance counter stats for './puzzle.exe 16384':
+
+             28,81 msec task-clock:u              #    0,992 CPUs utilized          
+       108.319.213      cycles:u                  #    3,760 GHz                    
+         1.049.788      L1-dcache-load-misses:u   #    0,79% of all L1-dcache hits  
+       133.511.516      L1-dcache-loads:u         # 4634,441 M/sec                  
+       269.417.494      instructions:u            #    2,49  insn per cycle         
+        17.003.836      branch:u                  #  590,236 M/sec                  
+             5.353      branch-misses:u                                             
+       133.511.516      L1-dcache-loads:u         # 4634,441 M/sec                  
+         1.049.788      L1-dcache-load-misses:u   #    0,79% of all L1-dcache hits  
+             1.170      LLC-loads:u               #    0,041 M/sec                  
+               321      LLC-load-misses:u         #   27,44% of all LL-cache hits   
+
+       0,029033083 seconds time elapsed
+
+       0,028998000 seconds user
+       0,000000000 seconds sys
+
+

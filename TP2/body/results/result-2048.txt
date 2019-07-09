@@ -1,0 +1,21 @@
+
+ Performance counter stats for './body.exe 2048':
+
+              0,74 msec task-clock:u              #    0,793 CPUs utilized          
+         2.085.968      cycles:u                  #    2,837 GHz                    
+             3.201      L1-dcache-load-misses:u   #    0,17% of all L1-dcache hits  
+         1.830.237      L1-dcache-loads:u         # 2488,882 M/sec                  
+         3.150.282      instructions:u            #    1,51  insn per cycle         
+           209.581      branch:u                  #  285,003 M/sec                  
+             2.103      branch-misses:u                                             
+         1.830.237      L1-dcache-loads:u         # 2488,882 M/sec                  
+             3.201      L1-dcache-load-misses:u   #    0,17% of all L1-dcache hits  
+               786      LLC-loads:u               #    1,069 M/sec                  
+               357      LLC-load-misses:u         #   45,42% of all LL-cache hits   
+
+       0,000927154 seconds time elapsed
+
+       0,000949000 seconds user
+       0,000000000 seconds sys
+
+

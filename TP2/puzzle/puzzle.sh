@@ -1,14 +1,7 @@
 #!/bin/bash
 gcc puzzle.c -o puzzle.exe
-perf stat -d -e task-clock,cycles,L1-dcache-load-misses,L1-dcache-loads,instructions,branch,branch-misses ./puzzle.exe 16384 &> result.txt
-perf stat -d -e task-clock,cycles,L1-dcache-load-misses,L1-dcache-loads,instructions,branch,branch-misses ./puzzle.exe 32768 &>> result.txt
-perf stat -d -e task-clock,cycles,L1-dcache-load-misses,L1-dcache-loads,instructions,branch,branch-misses ./puzzle.exe 65536 &>> result.txt
-perf stat -d -e task-clock,cycles,L1-dcache-load-misses,L1-dcache-loads,instructions,branch,branch-misses ./puzzle.exe 131072 &>> result.txt
-perf stat -d -e task-clock,cycles,L1-dcache-load-misses,L1-dcache-loads,instructions,branch,branch-misses ./puzzle.exe 262144 &>> result.txt
-perf stat -d -e task-clock,cycles,L1-dcache-load-misses,L1-dcache-loads,instructions,branch,branch-misses ./puzzle.exe 524288 &>> result.txt
-perf stat -d -e task-clock,cycles,L1-dcache-load-misses,L1-dcache-loads,instructions,branch,branch-misses ./puzzle.exe 1048576 &>> result.txt
-perf stat -d -e task-clock,cycles,L1-dcache-load-misses,L1-dcache-loads,instructions,branch,branch-misses ./puzzle.exe 2097152 &>> result.txt
-perf stat -d -e task-clock,cycles,L1-dcache-load-misses,L1-dcache-loads,instructions,branch,branch-misses ./puzzle.exe 4194304 &>> result.txt
-perf stat -d -e task-clock,cycles,L1-dcache-load-misses,L1-dcache-loads,instructions,branch,branch-misses ./puzzle.exe 8388608 &>> result.txt
-perf stat -d -e task-clock,cycles,L1-dcache-load-misses,L1-dcache-loads,instructions,branch,branch-misses ./puzzle.exe 16777216 &>> result.txt
-perf stat -d -e task-clock,cycles,L1-dcache-load-misses,L1-dcache-loads,instructions,branch,branch-misses ./puzzle.exe 33554432 &>> result.txt
+rm -r results
+mkdir results
+for s in 2048 4096 8192 16384 32768 65536 131072 262144 524288 1048576 2097152; do
+    perf stat -d -e task-clock,cycles,L1-dcache-load-misses,L1-dcache-loads,instructions,branch,branch-misses ./puzzle.exe $s &> ./results/result-$s.txt
+done

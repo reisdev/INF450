@@ -1,0 +1,54 @@
+==26976== Cachegrind, a cache and branch-prediction profiler
+==26976== Copyright (C) 2002-2017, and GNU GPL'd, by Nicholas Nethercote et al.
+==26976== Using Valgrind-3.14.0 and LibVEX; rerun with -h for copyright info
+==26976== Command: ./treesort.exe 2097152
+==26976== 
+--26976-- warning: L3 cache found, using its data for the LL simulation.
+--26976-- warning: specified LL cache: line_size 64  assoc 12  total_size 9,437,184
+--26976-- warning: simulated LL cache: line_size 64  assoc 18  total_size 9,437,184
+==26976== brk segment overflow in thread #1: can't grow to 0x484c000
+==26976== (see section Limitations in user manual)
+==26976== NOTE: further instances of this message will not be shown
+==26976== 
+==26976== I   refs:      118,820,768,628
+==26976== I1  misses:                609
+==26976== LLi misses:                609
+==26976== I1  miss rate:            0.00%
+==26976== LLi miss rate:            0.00%
+==26976== 
+==26976== D   refs:       71,935,879,430  (53,632,271,524 rd   + 18,303,607,906 wr)
+==26976== D1  misses:         25,013,153  (    16,814,546 rd   +      8,198,607 wr)
+==26976== LLd misses:         14,964,905  (     6,769,257 rd   +      8,195,648 wr)
+==26976== D1  miss rate:             0.0% (           0.0%     +            0.0%  )
+==26976== LLd miss rate:             0.0% (           0.0%     +            0.0%  )
+==26976== 
+==26976== LL refs:            25,013,762  (    16,815,155 rd   +      8,198,607 wr)
+==26976== LL misses:          14,965,514  (     6,769,866 rd   +      8,195,648 wr)
+==26976== LL miss rate:              0.0% (           0.0%     +            0.0%  )
+==29773== Cachegrind, a cache and branch-prediction profiler
+==29773== Copyright (C) 2002-2017, and GNU GPL'd, by Nicholas Nethercote et al.
+==29773== Using Valgrind-3.14.0 and LibVEX; rerun with -h for copyright info
+==29773== Command: ./treesort.exe 2097152
+==29773== 
+--29773-- warning: L3 cache found, using its data for the LL simulation.
+--29773-- warning: specified LL cache: line_size 64  assoc 12  total_size 9,437,184
+--29773-- warning: simulated LL cache: line_size 64  assoc 18  total_size 9,437,184
+==29773== brk segment overflow in thread #1: can't grow to 0x484c000
+==29773== (see section Limitations in user manual)
+==29773== NOTE: further instances of this message will not be shown
+==29773== 
+==29773== I   refs:      118,820,734,143
+==29773== I1  misses:                582
+==29773== LLi misses:                582
+==29773== I1  miss rate:            0.00%
+==29773== LLi miss rate:            0.00%
+==29773== 
+==29773== D   refs:       71,935,866,868  (53,632,262,245 rd   + 18,303,604,623 wr)
+==29773== D1  misses:         25,048,538  (    16,849,676 rd   +      8,198,862 wr)
+==29773== LLd misses:         14,965,517  (     6,769,873 rd   +      8,195,644 wr)
+==29773== D1  miss rate:             0.0% (           0.0%     +            0.0%  )
+==29773== LLd miss rate:             0.0% (           0.0%     +            0.0%  )
+==29773== 
+==29773== LL refs:            25,049,120  (    16,850,258 rd   +      8,198,862 wr)
+==29773== LL misses:          14,966,099  (     6,770,455 rd   +      8,195,644 wr)
+==29773== LL miss rate:              0.0% (           0.0%     +            0.0%  )

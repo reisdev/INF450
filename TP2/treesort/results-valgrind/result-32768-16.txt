@@ -1,0 +1,27 @@
+==26353== Cachegrind, a cache and branch-prediction profiler
+==26353== Copyright (C) 2002-2017, and GNU GPL'd, by Nicholas Nethercote et al.
+==26353== Using Valgrind-3.14.0 and LibVEX; rerun with -h for copyright info
+==26353== Command: ./treesort.exe 32768
+==26353== 
+--26353-- warning: L3 cache found, using its data for the LL simulation.
+--26353-- warning: specified LL cache: line_size 64  assoc 12  total_size 9,437,184
+--26353-- warning: simulated LL cache: line_size 64  assoc 18  total_size 9,437,184
+==26353== brk segment overflow in thread #1: can't grow to 0x484c000
+==26353== (see section Limitations in user manual)
+==26353== NOTE: further instances of this message will not be shown
+==26353== 
+==26353== I   refs:      2,576,476,843
+==26353== I1  misses:              628
+==26353== LLi misses:              628
+==26353== I1  miss rate:          0.00%
+==26353== LLi miss rate:          0.00%
+==26353== 
+==26353== D   refs:      1,351,539,990  (956,818,354 rd   + 394,721,636 wr)
+==26353== D1  misses:       33,128,090  ( 32,120,591 rd   +   1,007,499 wr)
+==26353== LLd misses:       31,532,513  ( 30,532,162 rd   +   1,000,351 wr)
+==26353== D1  miss rate:           2.5% (        3.4%     +         0.3%  )
+==26353== LLd miss rate:           2.3% (        3.2%     +         0.3%  )
+==26353== 
+==26353== LL refs:          33,128,718  ( 32,121,219 rd   +   1,007,499 wr)
+==26353== LL misses:        31,533,141  ( 30,532,790 rd   +   1,000,351 wr)
+==26353== LL miss rate:            0.8% (        0.9%     +         0.3%  )

@@ -1,0 +1,21 @@
+
+ Performance counter stats for './list.exe 4096 15 8':
+
+              1,74 msec task-clock:u              #    0,903 CPUs utilized          
+         5.668.521      cycles:u                  #    3,259 GHz                    
+           239.553      L1-dcache-load-misses:u   #    6,29% of all L1-dcache hits  
+         3.808.384      L1-dcache-loads:u         # 2189,364 M/sec                  
+         7.158.692      instructions:u            #    1,26  insn per cycle         
+         1.348.512      branch:u                  #  775,233 M/sec                  
+             4.792      branch-misses:u                                             
+         3.808.384      L1-dcache-loads:u         # 2189,364 M/sec                  
+           239.553      L1-dcache-load-misses:u   #    6,29% of all L1-dcache hits  
+               961      LLC-loads:u               #    0,552 M/sec                  
+               302      LLC-load-misses:u         #   31,43% of all LL-cache hits   
+
+       0,001926960 seconds time elapsed
+
+       0,001945000 seconds user
+       0,000000000 seconds sys
+
+

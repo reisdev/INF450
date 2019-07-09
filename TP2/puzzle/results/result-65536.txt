@@ -1,0 +1,21 @@
+
+ Performance counter stats for './puzzle.exe 65536':
+
+            112,20 msec task-clock:u              #    0,998 CPUs utilized          
+       432.318.701      cycles:u                  #    3,853 GHz                    
+         4.335.788      L1-dcache-load-misses:u   #    0,81% of all L1-dcache hits  
+       533.854.694      L1-dcache-loads:u         # 4757,994 M/sec                  
+     1.076.985.043      instructions:u            #    2,49  insn per cycle         
+        67.876.320      branch:u                  #  604,950 M/sec                  
+             5.524      branch-misses:u                                             
+       533.854.694      L1-dcache-loads:u         # 4757,994 M/sec                  
+         4.335.788      L1-dcache-load-misses:u   #    0,81% of all L1-dcache hits  
+            49.388      LLC-loads:u               #    0,440 M/sec                  
+               399      LLC-load-misses:u         #    0,81% of all LL-cache hits   
+
+       0,112420969 seconds time elapsed
+
+       0,109028000 seconds user
+       0,003307000 seconds sys
+
+
